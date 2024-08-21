@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   const clientId = import.meta.env.VITE_CLIENT_ID; // Replace with your GitHub Client ID
-  const redirectUri = "http://116.202.210.102:5179/git"; // Replace with your callback URL
+  const redirectUri = "http://localhost:5173/git"; // Replace with your callback URL
   const handleLogin = () => {
     const githubAuthUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}`;
     window.location.href = githubAuthUrl; // Redirect to GitHub for authentication
